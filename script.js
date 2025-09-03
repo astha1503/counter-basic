@@ -5,18 +5,18 @@ const reset = document.querySelector('.reset');
 const up = document.querySelector('.up');
 
 down.addEventListener('click' , function(){
-    let currNum = parseInt(number.innerHTML);
+    let currNum = parseInt(number.textContent);
     if(currNum <= 0){
         return;
     }
-    number.innerHTML = currNum - 1;
+    number.textContent = currNum - 1;
 })
 
 reset.addEventListener('click' , function(){
-    number.innerHTML = 0;
+    number.textContent = 0;
 })
 
 up.addEventListener('click' , function(){
     let currNum = parseInt(number.innerHTML);
-    number.innerHTML = currNum + 1;
+    number.textContent = currNum + 1;
 })
